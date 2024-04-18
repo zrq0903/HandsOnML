@@ -54,8 +54,8 @@ o4 = o3.float().sum()
 o5 = o4.item()
 '''
 def evaluate_accuracy(test_iter,net):
+    acc_sum, n = 0, 0
     for X,y in test_iter:
-        acc_sum,n=0,0
         acc_sum+=(y==net(X).argmax(dim=1)).float().sum().item()
         n+=y.shape[0]
     return  acc_sum/n
