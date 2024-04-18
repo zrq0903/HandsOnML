@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76aab117-439c-4703-abb1-4d8e6bef91fe" name="Default Changelist" comment="24/04/17">
+    <list default="true" id="76aab117-439c-4703-abb1-4d8e6bef91fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/VGG.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softmax_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/softmax_regression.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="HandsOnDL" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,7 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AlexNet">
+  <component name="RunManager" selected="Python.VGG">
     <configuration name="AlexNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HandsOnDL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Perceptron" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="VGG" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HandsOnDL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,7 +125,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Perceptron.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VGG.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.VGG" />
         <item itemvalue="Python.AlexNet" />
         <item itemvalue="Python.softmax_regression" />
         <item itemvalue="Python.CNN_Layers" />
         <item itemvalue="Python.MultiLayer Perceptron" />
-        <item itemvalue="Python.Perceptron" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +210,11 @@
       <workItem from="1713259738739" duration="2817000" />
       <workItem from="1713319852650" duration="6245000" />
       <workItem from="1713346900514" duration="5674000" />
-      <workItem from="1713404266116" duration="5807000" />
+      <workItem from="1713404266116" duration="13171000" />
+      <workItem from="1713428169320" duration="4433000" />
+      <workItem from="1713433871903" duration="209000" />
+      <workItem from="1713434145808" duration="204000" />
+      <workItem from="1713434369809" duration="805000" />
     </task>
     <task id="LOCAL-00001" summary="24/04/17">
       <created>1713325060195</created>
@@ -216,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713325060195</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="24/04/17">
+      <created>1713411472177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713411472177</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,9 +289,10 @@
     <SUITE FILE_PATH="coverage/HandsOnDL$Tensorboard.coverage" NAME="Tensorboard Coverage Results" MODIFIED="1711939790771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$softmax_regression.coverage" NAME="softmax_regression Coverage Results" MODIFIED="1713365566155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$MultiLayer_Perceptron.coverage" NAME="MultiLayer Perceptron Coverage Results" MODIFIED="1712741886098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
-    <SUITE FILE_PATH="coverage/HandsOnDL$AlexNet.coverage" NAME="AlexNet Coverage Results" MODIFIED="1713409525590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
+    <SUITE FILE_PATH="coverage/HandsOnDL$AlexNet.coverage" NAME="AlexNet Coverage Results" MODIFIED="1713434549646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$Perceptron.coverage" NAME="Perceptron Coverage Results" MODIFIED="1712738508577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$CNN_Layers.coverage" NAME="CNN_Layers Coverage Results" MODIFIED="1713324119387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
+    <SUITE FILE_PATH="coverage/HandsOnDL$VGG.coverage" NAME="VGG Coverage Results" MODIFIED="1713454489405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$insect_classi.coverage" NAME="insect_classi Coverage Results" MODIFIED="1711620163402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$rewrite_dataset.coverage" NAME="rewrite_dataset Coverage Results" MODIFIED="1711969263698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
   </component>
