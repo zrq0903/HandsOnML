@@ -9,7 +9,7 @@ from torch import nn
 import matplotlib.pyplot as plt
 from functions import eva_accu,train
 os.environ['KMP_DUPLICATE_LIB_OK']='TRUE'
-dataset_transform=transforms.Compose([transforms.Resize(224),transforms.ToTensor()])
+dataset_transform=transforms.Compose([transforms.Resize(56),transforms.ToTensor()])
 mnist_train = torchvision.datasets.FashionMNIST(root='~/Datasets/FashionMNIST', train=True, download=False, transform=dataset_transform)
 mnist_test = torchvision.datasets.FashionMNIST(root='~/Datasets/FashionMNIST', train=False, download=False, transform=dataset_transform)
 batch_size = 256
@@ -28,7 +28,7 @@ def VGG_block(conv_num,in_size,out_size):
             block.append(nn.Conv2d(in_channels=out_size,out_channels=out_size,kernel_size=3,padding=1))
     block.append(nn.MaxPool2d(2,stride=2))
     return nn.Sequential(*block)
-block_info=((1,1,8),(1,8,16),(2,16,32),(2,32,64),(2,64,64))
+block_info=((1,1,8),(1,8,16),(2,16,32))
 def VGG(block_info,hidden_units,fc_size):
     net = nn.Sequential()
     for i,(conv_num,in_size,out_size) in enumerate(block_info):
@@ -45,7 +45,7 @@ def VGG(block_info,hidden_units,fc_size):
         nn.Linear(hidden_units,10)
     ))
     return net
-net = VGG(block_info,4096,64*7*7)
+net = VGG(block_info,1024,32*7*7)
 
 print(eva_accu(test_iter,net))
 def init_weight(m):
@@ -55,13 +55,12 @@ net.apply(init_weight)
 print(eva_accu(test_iter,net))
 lr ,num_epochs = 0.001, 20
 optimizer = torch.optim.Adam(net.parameters(),lr)
-a=[]
-b=[]
-c=[]
 train(net,train_iter,test_iter,num_epochs,optimizer)
+'''
 plt.plot(a,label = 'train_loss')
 plt.plot(b,label = 'train_acc')
 plt.plot(c,label = 'test_acc')
 plt.legend()
 plt.xlabel('epoches')
 plt.show()
+'''

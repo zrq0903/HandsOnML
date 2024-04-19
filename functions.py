@@ -27,7 +27,4 @@ def train(net,train_iter,test_iter,num_epochs,optimizer):
             train_l_sum+=l.item()
             train_accu_sum += (y==y_pred.argmax(dim=1)).float().sum().item()
         test_accu = eva_accu(test_iter,net)
-        a.append(train_l_sum/batch_num)
-        b.append(train_accu_sum/n)
-        c.append(test_accu)
         print('epooch {},train loss {:.3f},train accu {:.3f},test accu{:.3f}'.format(epoch+1,train_l_sum/batch_num,train_accu_sum/n,test_accu))
