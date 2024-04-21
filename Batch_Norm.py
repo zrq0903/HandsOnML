@@ -41,28 +41,33 @@ class BatchNorm(nn.Module):
         self.moving_mean = torch.zeros(shape)
         self.moving_var = torch.zeros(shape)
     def forward(self,x):
-        y, moving_mean, moving_var = BN(self.training,x,self.moving_mean,self.moving_var,0.9,self.beta,self.gamma,1e-5)
+        y, self.moving_mean, self.moving_var = BN(self.training,x,self.moving_mean,self.moving_var,0.9,self.beta,self.gamma,1e-5)
         return y
 net = nn.Sequential(
             nn.Conv2d(1, 6, 5), # in_channels, out_channels, kernel_size
+            #nn.BatchNorm2d(6),
             BatchNorm(6, num_dims=4),
             nn.Sigmoid(),
             nn.MaxPool2d(2, 2), # kernel_size, stride
             nn.Conv2d(6, 16, 5),
+            #nn.BatchNorm2d(16),
             BatchNorm(16, num_dims=4),
             nn.Sigmoid(),
             nn.MaxPool2d(2, 2),
             nn.Flatten(),
             nn.Linear(16*4*4, 120),
+            #nn.BatchNorm1d(120),
             BatchNorm(120, num_dims=2),
             nn.Sigmoid(),
             nn.Linear(120, 84),
+            #nn.BatchNorm1d(84),
             BatchNorm(84, num_dims=2),
             nn.Sigmoid(),
             nn.Linear(84, 10)
         )
+#print(isinstance(net[1],nn.Module))
 batch_size = 256
-lr, num_epochs = 0.001, 15
+lr, num_epochs = 0.1, 15
 optimizer = torch.optim.Adam(net.parameters(), lr=lr)
 train(net,train_iter,test_iter,num_epochs,optimizer)
 

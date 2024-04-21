@@ -6,11 +6,12 @@ import os
 from torch import nn
 def eva_accu(data_iter,net):
     accu_sum,n =0.0,0
-    for X,y in data_iter:
-        net.eval()
-        accu_sum+=(y==net(X).argmax(dim=1)).float().sum().item()
-        net.train()
-        n+=y.shape[0]
+    with torch.no_grad():
+        for X, y in data_iter:
+            net.eval()
+            accu_sum += (y == net(X).argmax(dim=1)).float().sum().item()
+            net.train()
+            n += y.shape[0]
     return  accu_sum/n
 def train(net,train_iter,test_iter,num_epochs,optimizer):
     loss = nn.CrossEntropyLoss()
