@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="76aab117-439c-4703-abb1-4d8e6bef91fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Batch_Norm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Batch_Norm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,29 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Batch_Norm">
-    <configuration name="AlexNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="HandsOnDL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\zxczr\anaconda3\envs\TC2\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\HandsOnDL\Alex_Net.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Res_Net">
     <configuration name="Alex_Net" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HandsOnDL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,6 +125,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Res_Net" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HandsOnDL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\zxczr\anaconda3\envs\TC2\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Res_Net.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="VGG" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HandsOnDL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Res_Net" />
         <item itemvalue="Python.Batch_Norm" />
         <item itemvalue="Python.VGG" />
         <item itemvalue="Python.Alex_Net" />
         <item itemvalue="Python.Google_Net" />
-        <item itemvalue="Python.AlexNet" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +231,8 @@
       <workItem from="1713491131829" duration="12813000" />
       <workItem from="1713602726627" duration="1558000" />
       <workItem from="1713665011212" duration="7152000" />
-      <workItem from="1713688915283" duration="3740000" />
+      <workItem from="1713688915283" duration="3890000" />
+      <workItem from="1713751043018" duration="4263000" />
     </task>
     <task id="LOCAL-00001" summary="24/04/17">
       <created>1713325060195</created>
@@ -277,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713675548311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="24/04/21">
+      <created>1713692807097</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713692807097</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +358,7 @@
     <SUITE FILE_PATH="coverage/HandsOnDL$functions.coverage" NAME="functions Coverage Results" MODIFIED="1713455631855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$AlexNet.coverage" NAME="AlexNet Coverage Results" MODIFIED="1713456281940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$Google_Net.coverage" NAME="Google_Net Coverage Results" MODIFIED="1713516069353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
+    <SUITE FILE_PATH="coverage/HandsOnDL$Res_Net.coverage" NAME="Res_Net Coverage Results" MODIFIED="1713754535407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$insect_classi.coverage" NAME="insect_classi Coverage Results" MODIFIED="1711620163402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$Alex_Net.coverage" NAME="Alex_Net Coverage Results" MODIFIED="1713690948271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
     <SUITE FILE_PATH="coverage/HandsOnDL$rewrite_dataset.coverage" NAME="rewrite_dataset Coverage Results" MODIFIED="1711969263698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
